@@ -1,4 +1,4 @@
-package com.yourpackage.name
+package com. example.ondrop
 
 import androidx.compose.foundation.layout.*
 import androidx.compose.material3.*
