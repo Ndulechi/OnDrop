@@ -44,5 +44,9 @@ fun LoginScreen() {
         Button(onClick = { /* TODO: Login logic */ }, modifier = Modifier.fillMaxWidth()) {
             Text("Login")
         }
+        Spacer(modifier = Modifier.height(16.dp))
+TextButton(onClick = { /* TODO: Go to SignUp screen */ }) {
+    Text("Don't have an account? Sign Up")
+}
     }
 }
