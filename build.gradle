@@ -1,21 +1,13 @@
 buildscript {
     ext.kotlin_version = '1.9.22'
-    repositories {
-        google()
-        mavenCentral()
-    }
+    // NO repositories here
     dependencies {
         classpath 'com.android.tools.build:gradle:8.1.4'
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.22"
     }
 }
 
-allprojects {
-    repositories {
-        google()
-        mavenCentral()
-    }
-}
+// DELETE allprojects block completely
 
 rootProject.buildDir = '../build'
 subprojects {
@@ -25,6 +17,6 @@ subprojects {
     project.evaluationDependsOn(':app')
 }
 
-taskstasks.register("clean", Delete) {
+tasks.register("clean", Delete) {
     delete rootProject.buildDir
 }
